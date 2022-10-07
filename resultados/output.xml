@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20221007 14:33:01.150" rpa="false" schemaversion="3">
+<suite id="s1" name="Smb Login" source="D:\Users\delano.silva\Robot_WEB\Robot_Teste_WEB\testes\smb_login.robot">
+<test id="s1-t1" name="Login Com Sucesso" line="13">
+<kw name="Abrir o navegador" library="smb_login_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221007 14:33:01.500" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221007 14:33:01.499" endtime="20221007 14:33:03.852"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221007 14:33:03.854" endtime="20221007 14:33:04.002"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:01.498" endtime="20221007 14:33:04.003"/>
+</kw>
+<kw name="Dado que estou na home page do site Tray" library="LoginActions">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221007 14:33:04.012" level="INFO">Opening url 'https://loja-s.tray.com.br/adm/login.php?legacy=1'</msg>
+<status status="PASS" starttime="20221007 14:33:04.010" endtime="20221007 14:33:06.179"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:04.008" endtime="20221007 14:33:06.179"/>
+</kw>
+<kw name="Quando preencho as informações corretas para login" library="LoginActions">
+<arg>1079359</arg>
+<arg>123qweqwe</arg>
+<arg>esT6nq63*f#QA</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=loja</arg>
+<arg>text= ${LOJA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:33:06.182" level="INFO">Typing text ' 1079359' into text field 'loja'.</msg>
+<status status="PASS" starttime="20221007 14:33:06.181" endtime="20221007 14:33:06.313"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:33:08.320" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221007 14:33:06.313" endtime="20221007 14:33:08.320"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=usuario</arg>
+<arg>text=${USUARIO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:33:08.320" level="INFO">Typing text '123qweqwe' into text field 'usuario'.</msg>
+<status status="PASS" starttime="20221007 14:33:08.320" endtime="20221007 14:33:08.428"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:33:10.441" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221007 14:33:08.429" endtime="20221007 14:33:10.441"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=senha</arg>
+<arg>text=${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:33:10.441" level="INFO">Typing text 'esT6nq63*f#QA' into text field 'senha'.</msg>
+<status status="PASS" starttime="20221007 14:33:10.441" endtime="20221007 14:33:10.551"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:33:11.562" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221007 14:33:10.552" endtime="20221007 14:33:11.562"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:06.180" endtime="20221007 14:33:11.562"/>
+</kw>
+<kw name="E clico no botão entrar" library="LoginActions">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=btn-submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221007 14:33:11.564" level="INFO">Clicking element 'btn-submit'.</msg>
+<status status="PASS" starttime="20221007 14:33:11.564" endtime="20221007 14:33:11.634"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:11.563" endtime="20221007 14:33:11.634"/>
+</kw>
+<kw name="Então aparece o painel administrativo da Tray" library="LoginActions">
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:33:17.637" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20221007 14:33:11.636" endtime="20221007 14:33:17.637"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU_TRAY}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221007 14:33:17.637" endtime="20221007 14:33:25.775"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:11.635" endtime="20221007 14:33:25.775"/>
+</kw>
+<kw name="Então Eu Faço Logout" library="LoginActions" type="TEARDOWN">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@class='nav-user__profile-username'][contains(.,'Teste da silva')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221007 14:33:25.777" level="INFO">Clicking element '//span[@class='nav-user__profile-username'][contains(.,'Teste da silva')]'.</msg>
+<status status="PASS" starttime="20221007 14:33:25.776" endtime="20221007 14:33:25.846"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//span[@class='nav-user__title'][contains(.,'Sair')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221007 14:33:25.846" endtime="20221007 14:33:25.898"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@role='menuitem'][contains(.,'Sair')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221007 14:33:25.900" level="INFO">Clicking element '//a[@role='menuitem'][contains(.,'Sair')]'.</msg>
+<status status="PASS" starttime="20221007 14:33:25.900" endtime="20221007 14:33:26.814"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:25.776" endtime="20221007 14:33:26.814"/>
+</kw>
+<tag>LGN01</tag>
+<status status="PASS" starttime="20221007 14:33:01.497" endtime="20221007 14:33:26.814"/>
+</test>
+<test id="s1-t2" name="Senha Em Branco" line="22">
+<kw name="Abrir o navegador" library="smb_login_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221007 14:33:26.821" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221007 14:33:26.820" endtime="20221007 14:33:28.867"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221007 14:33:28.867" endtime="20221007 14:33:28.996"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:26.819" endtime="20221007 14:33:28.996"/>
+</kw>
+<kw name="Dado que estou na home page do site Tray" library="LoginActions">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221007 14:33:28.998" level="INFO">Opening url 'https://loja-s.tray.com.br/adm/login.php?legacy=1'</msg>
+<status status="PASS" starttime="20221007 14:33:28.997" endtime="20221007 14:33:40.680"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:28.997" endtime="20221007 14:33:40.680"/>
+</kw>
+<kw name="Quando preencho as informações corretas para login" library="LoginActions">
+<arg>1079359</arg>
+<arg>123qweqwe</arg>
+<arg>${EMPTY}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=loja</arg>
+<arg>text= ${LOJA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:33:40.682" level="INFO">Typing text ' 1079359' into text field 'loja'.</msg>
+<status status="PASS" starttime="20221007 14:33:40.682" endtime="20221007 14:33:40.837"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:33:42.845" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221007 14:33:40.838" endtime="20221007 14:33:42.845"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=usuario</arg>
+<arg>text=${USUARIO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:33:42.847" level="INFO">Typing text '123qweqwe' into text field 'usuario'.</msg>
+<status status="PASS" starttime="20221007 14:33:42.846" endtime="20221007 14:33:43.017"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:33:45.029" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221007 14:33:43.018" endtime="20221007 14:33:45.029"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=senha</arg>
+<arg>text=${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:33:45.032" level="INFO">Typing text '' into text field 'senha'.</msg>
+<status status="PASS" starttime="20221007 14:33:45.030" endtime="20221007 14:33:45.153"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:33:46.156" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221007 14:33:45.153" endtime="20221007 14:33:46.156"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:40.681" endtime="20221007 14:33:46.156"/>
+</kw>
+<kw name="E clico no botão entrar" library="LoginActions">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=btn-submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221007 14:33:46.159" level="INFO">Clicking element 'btn-submit'.</msg>
+<status status="PASS" starttime="20221007 14:33:46.158" endtime="20221007 14:33:46.299"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:46.157" endtime="20221007 14:33:46.300"/>
+</kw>
+<kw name="Então aparece a mensagem de usuario ou senha errados" library="LoginActions">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:33:51.312" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221007 14:33:46.301" endtime="20221007 14:33:51.312"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${LOGIN_ERRADO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221007 14:33:51.313" endtime="20221007 14:33:51.373"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:46.301" endtime="20221007 14:33:51.374"/>
+</kw>
+<kw name="Fechar o navegador" library="smb_login_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>login_SMB{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221007 14:33:51.547" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="login_SMB2.png"&gt;&lt;img src="login_SMB2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221007 14:33:51.375" endtime="20221007 14:33:51.547"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221007 14:33:51.547" endtime="20221007 14:33:53.905"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:51.375" endtime="20221007 14:33:53.906"/>
+</kw>
+<tag>LGN02</tag>
+<status status="PASS" starttime="20221007 14:33:26.818" endtime="20221007 14:33:53.907"/>
+</test>
+<test id="s1-t3" name="Senha Incorreta" line="30">
+<kw name="Abrir o navegador" library="smb_login_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221007 14:33:53.919" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221007 14:33:53.917" endtime="20221007 14:33:56.007"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221007 14:33:56.007" endtime="20221007 14:33:56.143"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:53.916" endtime="20221007 14:33:56.144"/>
+</kw>
+<kw name="Dado que estou na home page do site Tray" library="LoginActions">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221007 14:33:56.148" level="INFO">Opening url 'https://loja-s.tray.com.br/adm/login.php?legacy=1'</msg>
+<status status="PASS" starttime="20221007 14:33:56.147" endtime="20221007 14:33:58.334"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:56.146" endtime="20221007 14:33:58.334"/>
+</kw>
+<kw name="Quando preencho as informações corretas para login" library="LoginActions">
+<arg>1079359</arg>
+<arg>123qweqwe</arg>
+<arg>Senha_errada#QA</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=loja</arg>
+<arg>text= ${LOJA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:33:58.338" level="INFO">Typing text ' 1079359' into text field 'loja'.</msg>
+<status status="PASS" starttime="20221007 14:33:58.336" endtime="20221007 14:33:58.543"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:00.545" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221007 14:33:58.544" endtime="20221007 14:34:00.545"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=usuario</arg>
+<arg>text=${USUARIO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:34:00.545" level="INFO">Typing text '123qweqwe' into text field 'usuario'.</msg>
+<status status="PASS" starttime="20221007 14:34:00.545" endtime="20221007 14:34:00.650"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:02.663" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221007 14:34:00.650" endtime="20221007 14:34:02.663"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=senha</arg>
+<arg>text=${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:34:02.664" level="INFO">Typing text 'Senha_errada#QA' into text field 'senha'.</msg>
+<status status="PASS" starttime="20221007 14:34:02.663" endtime="20221007 14:34:02.771"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:03.779" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221007 14:34:02.771" endtime="20221007 14:34:03.779"/>
+</kw>
+<status status="PASS" starttime="20221007 14:33:58.335" endtime="20221007 14:34:03.779"/>
+</kw>
+<kw name="E clico no botão entrar" library="LoginActions">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=btn-submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221007 14:34:03.781" level="INFO">Clicking element 'btn-submit'.</msg>
+<status status="PASS" starttime="20221007 14:34:03.781" endtime="20221007 14:34:03.849"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:03.780" endtime="20221007 14:34:03.850"/>
+</kw>
+<kw name="Então aparece a mensagem de usuario ou senha errados" library="LoginActions">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:08.861" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221007 14:34:03.851" endtime="20221007 14:34:08.861"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${LOGIN_ERRADO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221007 14:34:08.861" endtime="20221007 14:34:16.938"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:03.851" endtime="20221007 14:34:16.938"/>
+</kw>
+<kw name="Fechar o navegador" library="smb_login_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>login_SMB{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221007 14:34:17.162" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="login_SMB3.png"&gt;&lt;img src="login_SMB3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221007 14:34:16.940" endtime="20221007 14:34:17.163"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221007 14:34:17.163" endtime="20221007 14:34:19.506"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:16.940" endtime="20221007 14:34:19.506"/>
+</kw>
+<tag>LGN03</tag>
+<status status="PASS" starttime="20221007 14:33:53.913" endtime="20221007 14:34:19.507"/>
+</test>
+<test id="s1-t4" name="Usuario Incorreto" line="38">
+<kw name="Abrir o navegador" library="smb_login_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221007 14:34:19.513" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221007 14:34:19.512" endtime="20221007 14:34:21.421"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221007 14:34:21.421" endtime="20221007 14:34:21.557"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:19.511" endtime="20221007 14:34:21.558"/>
+</kw>
+<kw name="Dado que estou na home page do site Tray" library="LoginActions">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221007 14:34:21.562" level="INFO">Opening url 'https://loja-s.tray.com.br/adm/login.php?legacy=1'</msg>
+<status status="PASS" starttime="20221007 14:34:21.560" endtime="20221007 14:34:24.650"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:21.559" endtime="20221007 14:34:24.651"/>
+</kw>
+<kw name="Quando preencho as informações corretas para login" library="LoginActions">
+<arg>1079359</arg>
+<arg>Erro_Usuario</arg>
+<arg>esT6nq63*f#QA</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=loja</arg>
+<arg>text= ${LOJA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:34:24.653" level="INFO">Typing text ' 1079359' into text field 'loja'.</msg>
+<status status="PASS" starttime="20221007 14:34:24.653" endtime="20221007 14:34:24.783"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:26.798" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221007 14:34:24.783" endtime="20221007 14:34:26.798"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=usuario</arg>
+<arg>text=${USUARIO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:34:26.799" level="INFO">Typing text 'Erro_Usuario' into text field 'usuario'.</msg>
+<status status="PASS" starttime="20221007 14:34:26.798" endtime="20221007 14:34:26.912"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:28.925" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221007 14:34:26.912" endtime="20221007 14:34:28.925"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=senha</arg>
+<arg>text=${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:34:28.925" level="INFO">Typing text 'esT6nq63*f#QA' into text field 'senha'.</msg>
+<status status="PASS" starttime="20221007 14:34:28.925" endtime="20221007 14:34:29.033"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:30.040" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221007 14:34:29.033" endtime="20221007 14:34:30.040"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:24.652" endtime="20221007 14:34:30.040"/>
+</kw>
+<kw name="E clico no botão entrar" library="LoginActions">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=btn-submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221007 14:34:30.042" level="INFO">Clicking element 'btn-submit'.</msg>
+<status status="PASS" starttime="20221007 14:34:30.042" endtime="20221007 14:34:30.112"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:30.041" endtime="20221007 14:34:30.112"/>
+</kw>
+<kw name="Então aparece a mensagem de usuario ou senha errados" library="LoginActions">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:35.119" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221007 14:34:30.114" endtime="20221007 14:34:35.119"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${LOGIN_ERRADO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20221007 14:34:40.426" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221007 14:34:40.428" level="FAIL">Element '//p[contains(.,'Usuário e/ou senha inválidos. Tente novamente ou clique aqui e gere uma nova senha.')]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221007 14:34:35.119" endtime="20221007 14:34:40.434"/>
+</kw>
+<status status="FAIL" starttime="20221007 14:34:30.113" endtime="20221007 14:34:40.435"/>
+</kw>
+<kw name="Fechar o navegador" library="smb_login_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>login_SMB{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221007 14:34:40.600" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="login_SMB4.png"&gt;&lt;img src="login_SMB4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221007 14:34:40.439" endtime="20221007 14:34:40.600"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221007 14:34:40.600" endtime="20221007 14:34:42.956"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:40.437" endtime="20221007 14:34:42.957"/>
+</kw>
+<tag>LGN04</tag>
+<status status="FAIL" starttime="20221007 14:34:19.510" endtime="20221007 14:34:42.958">Element '//p[contains(.,'Usuário e/ou senha inválidos. Tente novamente ou clique aqui e gere uma nova senha.')]' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t5" name="Usuario Em Branco" line="46">
+<kw name="Abrir o navegador" library="smb_login_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221007 14:34:42.964" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221007 14:34:42.963" endtime="20221007 14:34:44.965"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221007 14:34:44.966" endtime="20221007 14:34:45.095"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:42.963" endtime="20221007 14:34:45.095"/>
+</kw>
+<kw name="Dado que estou na home page do site Tray" library="LoginActions">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221007 14:34:45.097" level="INFO">Opening url 'https://loja-s.tray.com.br/adm/login.php?legacy=1'</msg>
+<status status="PASS" starttime="20221007 14:34:45.096" endtime="20221007 14:34:47.265"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:45.096" endtime="20221007 14:34:47.265"/>
+</kw>
+<kw name="Quando preencho as informações corretas para login" library="LoginActions">
+<arg>1079359</arg>
+<arg>${EMPTY}</arg>
+<arg>esT6nq63*f#QA</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=loja</arg>
+<arg>text= ${LOJA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:34:47.273" level="INFO">Typing text ' 1079359' into text field 'loja'.</msg>
+<status status="PASS" starttime="20221007 14:34:47.271" endtime="20221007 14:34:47.401"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:49.405" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221007 14:34:47.401" endtime="20221007 14:34:49.406"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=usuario</arg>
+<arg>text=${USUARIO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:34:49.406" level="INFO">Typing text '' into text field 'usuario'.</msg>
+<status status="PASS" starttime="20221007 14:34:49.406" endtime="20221007 14:34:49.507"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:51.511" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221007 14:34:49.507" endtime="20221007 14:34:51.511"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=senha</arg>
+<arg>text=${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221007 14:34:51.512" level="INFO">Typing text 'esT6nq63*f#QA' into text field 'senha'.</msg>
+<status status="PASS" starttime="20221007 14:34:51.511" endtime="20221007 14:34:51.635"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:52.650" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221007 14:34:51.635" endtime="20221007 14:34:52.650"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:47.268" endtime="20221007 14:34:52.650"/>
+</kw>
+<kw name="E clico no botão entrar" library="LoginActions">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=btn-submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221007 14:34:52.654" level="INFO">Clicking element 'btn-submit'.</msg>
+<status status="PASS" starttime="20221007 14:34:52.653" endtime="20221007 14:34:52.725"/>
+</kw>
+<status status="PASS" starttime="20221007 14:34:52.653" endtime="20221007 14:34:52.725"/>
+</kw>
+<kw name="Então aparece a mensagem de usuario ou senha errados" library="LoginActions">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 14:34:57.735" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221007 14:34:52.726" endtime="20221007 14:34:57.736"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${LOGIN_ERRADO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20221007 14:35:02.929" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221007 14:35:02.930" level="FAIL">Element '//p[contains(.,'Usuário e/ou senha inválidos. Tente novamente ou clique aqui e gere uma nova senha.')]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221007 14:34:57.736" endtime="20221007 14:35:02.930"/>
+</kw>
+<status status="FAIL" starttime="20221007 14:34:52.726" endtime="20221007 14:35:02.931"/>
+</kw>
+<kw name="Fechar o navegador" library="smb_login_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>login_SMB{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221007 14:35:03.120" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="login_SMB5.png"&gt;&lt;img src="login_SMB5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221007 14:35:02.933" endtime="20221007 14:35:03.121"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221007 14:35:03.121" endtime="20221007 14:35:05.426"/>
+</kw>
+<status status="PASS" starttime="20221007 14:35:02.932" endtime="20221007 14:35:05.427"/>
+</kw>
+<tag>LGN05</tag>
+<status status="FAIL" starttime="20221007 14:34:42.962" endtime="20221007 14:35:05.430">Element '//p[contains(.,'Usuário e/ou senha inválidos. Tente novamente ou clique aqui e gere uma nova senha.')]' not visible after 5 seconds.</status>
+</test>
+<doc>Essa suite testa a tela de login do SMB pelo QA Delano</doc>
+<status status="FAIL" starttime="20221007 14:33:01.155" endtime="20221007 14:35:05.432"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">LGN01</stat>
+<stat pass="1" fail="0" skip="0">LGN02</stat>
+<stat pass="1" fail="0" skip="0">LGN03</stat>
+<stat pass="0" fail="1" skip="0">LGN04</stat>
+<stat pass="0" fail="1" skip="0">LGN05</stat>
+</tag>
+<suite>
+<stat pass="3" fail="2" skip="0" id="s1" name="Smb Login">Smb Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
