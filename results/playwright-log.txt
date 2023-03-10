@@ -1,0 +1,311 @@
+{"level":30,"time":"2023-03-10T18:13:15.464Z","pid":15644,"hostname":"Lucy","msg":"Listening on 51800"}
+{"level":30,"time":"2023-03-10T18:13:15.628Z","pid":15644,"hostname":"Lucy","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:15.628Z","pid":15644,"hostname":"Lucy","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:15.631Z","pid":15644,"hostname":"Lucy","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:15.632Z","pid":15644,"hostname":"Lucy","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:15.647Z","pid":15644,"hostname":"Lucy","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-03-10T18:13:16.007Z","pid":15644,"hostname":"Lucy","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-03-10T18:13:16.012Z","pid":15644,"hostname":"Lucy","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-03-10T18:13:16.013Z","pid":15644,"hostname":"Lucy","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-03-10T18:13:16.025Z","pid":15644,"hostname":"Lucy","msg":"Changed active context"}
+{"level":30,"time":"2023-03-10T18:13:16.122Z","pid":15644,"hostname":"Lucy","msg":"Video path: undefined"}
+{"level":30,"time":"2023-03-10T18:13:16.122Z","pid":15644,"hostname":"Lucy","msg":"Changed active page"}
+{"level":30,"time":"2023-03-10T18:13:18.145Z","pid":15644,"hostname":"Lucy","msg":"End of node method newPage"}
+{"level":30,"time":"2023-03-10T18:13:18.151Z","pid":15644,"hostname":"Lucy","msg":"Start of node method click"}
+{"level":30,"time":"2023-03-10T18:13:18.151Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(.,'Minha Conta')] in page."}
+{"level":30,"time":"2023-03-10T18:13:19.230Z","pid":15644,"hostname":"Lucy","msg":"End of node method click"}
+{"level":30,"time":"2023-03-10T18:13:19.234Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:19.235Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //button[@class='app__button--primary app__login__button app__login__button--login'][contains(.,'Entrar')] in page."}
+{"level":30,"time":"2023-03-10T18:13:19.309Z","pid":15644,"hostname":"Lucy","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:19.313Z","pid":15644,"hostname":"Lucy","msg":"Start of node method click"}
+{"level":30,"time":"2023-03-10T18:13:19.313Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //button[@class='app__button--primary app__login__button app__login__button--login'][contains(.,'Entrar')] in page."}
+{"level":30,"time":"2023-03-10T18:13:20.378Z","pid":15644,"hostname":"Lucy","msg":"End of node method click"}
+{"level":30,"time":"2023-03-10T18:13:20.381Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:20.381Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //strong[@class='tray-title tray-login__title'][contains(.,'Identifique-se')] in page."}
+{"level":30,"time":"2023-03-10T18:13:20.385Z","pid":15644,"hostname":"Lucy","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:20.389Z","pid":15644,"hostname":"Lucy","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-03-10T18:13:20.389Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //input[contains(@autocapitalize,'off')] in page."}
+{"level":30,"time":"2023-03-10T18:13:21.417Z","pid":15644,"hostname":"Lucy","msg":"End of node method fillText"}
+{"level":30,"time":"2023-03-10T18:13:21.419Z","pid":15644,"hostname":"Lucy","msg":"Start of node method click"}
+{"level":30,"time":"2023-03-10T18:13:21.419Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //button[@type='submit'][contains(.,'Continuar')] in page."}
+{"level":30,"time":"2023-03-10T18:13:22.456Z","pid":15644,"hostname":"Lucy","msg":"End of node method click"}
+{"level":30,"time":"2023-03-10T18:13:22.460Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:22.460Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //input[contains(@type,'password')] in page."}
+{"level":30,"time":"2023-03-10T18:13:22.464Z","pid":15644,"hostname":"Lucy","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:22.467Z","pid":15644,"hostname":"Lucy","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-03-10T18:13:22.467Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //input[contains(@type,'password')] in page."}
+{"level":30,"time":"2023-03-10T18:13:23.495Z","pid":15644,"hostname":"Lucy","msg":"End of node method fillText"}
+{"level":30,"time":"2023-03-10T18:13:23.497Z","pid":15644,"hostname":"Lucy","msg":"Start of node method click"}
+{"level":30,"time":"2023-03-10T18:13:23.497Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //button[@type='submit'][contains(.,'Continuar')] in page."}
+{"level":30,"time":"2023-03-10T18:13:24.517Z","pid":15644,"hostname":"Lucy","msg":"End of node method click"}
+{"level":30,"time":"2023-03-10T18:13:24.520Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:24.520Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.156Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.161Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.161Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.187Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+  strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.189Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.189Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.212Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+  strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.214Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.214Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.236Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+  strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.238Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.238Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.266Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+  strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.268Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.268Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.289Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+  strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.290Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.290Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.309Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+  strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.311Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.311Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.332Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+  strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.334Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.334Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.358Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+  strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.359Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.359Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.382Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+  strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.384Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.384Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.400Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+  strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.402Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.402Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.422Z","pid":15644,"hostname":"Lucy","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+=========================== logs ===========================
+waiting for selector "//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" to be visible
+  strict mode violation: "xpath=//a[contains(@class,'app__button app__button--primary app__button--no-margin')]" resolved to 2 elements:
+    1) <a tag="a" title="" href="/my-account/orders/1" cla…></a> aka playwright.$(".app__button >> nth=0")
+    2) <a tag="a" href="/my-account/profile" class="app__b…></a> aka playwright.$(".app__customer-preview__actions > .app__button")
+
+============================================================
+    at waitForElementState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:7059:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Augusto\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:8484:28)
+=============================================================
+{"level":30,"time":"2023-03-10T18:13:26.424Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.424Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@class,'app__button app__button--primary app__button--no-margin')] in page."}
+{"level":30,"time":"2023-03-10T18:13:26.436Z","pid":15644,"hostname":"Lucy","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:26.440Z","pid":15644,"hostname":"Lucy","msg":"Start of node method click"}
+{"level":30,"time":"2023-03-10T18:13:26.440Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //h1[@class='app__header__title'][contains(.,'´!¹²³$£¢¬¬..§ø123qweQWE;?')] in page."}
+{"level":30,"time":"2023-03-10T18:13:28.454Z","pid":15644,"hostname":"Lucy","msg":"End of node method click"}
+{"level":30,"time":"2023-03-10T18:13:28.455Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:28.456Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(.,'Sair')] in page."}
+{"level":30,"time":"2023-03-10T18:13:28.466Z","pid":15644,"hostname":"Lucy","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:28.470Z","pid":15644,"hostname":"Lucy","msg":"Start of node method click"}
+{"level":30,"time":"2023-03-10T18:13:28.470Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with (//a[@href='https://123qweqwe-1079359.commercesuite.com.br/racao'][contains(.,'Ração')])[1] in page."}
+{"level":30,"time":"2023-03-10T18:13:29.493Z","pid":15644,"hostname":"Lucy","msg":"End of node method click"}
+{"level":30,"time":"2023-03-10T18:13:29.496Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:29.496Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@itemprop,'url')] in page."}
+{"level":30,"time":"2023-03-10T18:13:29.585Z","pid":15644,"hostname":"Lucy","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:29.588Z","pid":15644,"hostname":"Lucy","msg":"Start of node method click"}
+{"level":30,"time":"2023-03-10T18:13:29.588Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //a[contains(@itemprop,'url')] in page."}
+{"level":30,"time":"2023-03-10T18:13:32.449Z","pid":15644,"hostname":"Lucy","msg":"End of node method click"}
+{"level":30,"time":"2023-03-10T18:13:34.467Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:34.467Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //span[@class='botao-commerce-img'][contains(.,'Comprar')] in page."}
+{"level":30,"time":"2023-03-10T18:13:34.481Z","pid":15644,"hostname":"Lucy","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:34.485Z","pid":15644,"hostname":"Lucy","msg":"Start of node method click"}
+{"level":30,"time":"2023-03-10T18:13:34.485Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //span[@class='botao-commerce-img'][contains(.,'Comprar')] in page."}
+{"level":30,"time":"2023-03-10T18:13:35.535Z","pid":15644,"hostname":"Lucy","msg":"End of node method click"}
+{"level":30,"time":"2023-03-10T18:13:35.538Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:35.538Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //span[@class='botao-commerce-img'][contains(.,'Avançar')] in page."}
+{"level":30,"time":"2023-03-10T18:13:36.084Z","pid":15644,"hostname":"Lucy","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-03-10T18:13:36.088Z","pid":15644,"hostname":"Lucy","msg":"Start of node method click"}
+{"level":30,"time":"2023-03-10T18:13:36.088Z","pid":15644,"hostname":"Lucy","msg":"Strict mode is enabled, find Locator with //span[@class='botao-commerce-img'][contains(.,'Avançar')] in page."}
+{"level":30,"time":"2023-03-10T18:13:37.110Z","pid":15644,"hostname":"Lucy","msg":"End of node method click"}
+{"level":30,"time":"2023-03-10T18:13:37.115Z","pid":15644,"hostname":"Lucy","msg":"Start of node method waitForResponse"}
+{"level":30,"time":"2023-03-10T18:13:40.730Z","pid":15644,"hostname":"Lucy","msg":"End of node method waitForResponse"}
+{"level":30,"time":"2023-03-10T18:13:40.735Z","pid":15644,"hostname":"Lucy","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-03-10T18:13:40.841Z","pid":15644,"hostname":"Lucy","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-03-10T18:13:40.846Z","pid":15644,"hostname":"Lucy","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:40.852Z","pid":15644,"hostname":"Lucy","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:40.854Z","pid":15644,"hostname":"Lucy","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:40.855Z","pid":15644,"hostname":"Lucy","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:40.856Z","pid":15644,"hostname":"Lucy","msg":"Changed active context"}
+{"level":30,"time":"2023-03-10T18:13:40.856Z","pid":15644,"hostname":"Lucy","msg":"Changing current active page"}
+{"level":30,"time":"2023-03-10T18:13:40.856Z","pid":15644,"hostname":"Lucy","msg":"Changed active page"}
+{"level":30,"time":"2023-03-10T18:13:40.860Z","pid":15644,"hostname":"Lucy","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:40.861Z","pid":15644,"hostname":"Lucy","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:40.862Z","pid":15644,"hostname":"Lucy","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-03-10T18:13:40.862Z","pid":15644,"hostname":"Lucy","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-03-10T18:13:40.863Z","pid":15644,"hostname":"Lucy","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-03-10T18:13:40.863Z","pid":15644,"hostname":"Lucy","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-03-10T18:13:40.865Z","pid":15644,"hostname":"Lucy","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:40.866Z","pid":15644,"hostname":"Lucy","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:40.867Z","pid":15644,"hostname":"Lucy","msg":"Changed active context"}
+{"level":30,"time":"2023-03-10T18:13:40.867Z","pid":15644,"hostname":"Lucy","msg":"Changing current active page"}
+{"level":30,"time":"2023-03-10T18:13:40.867Z","pid":15644,"hostname":"Lucy","msg":"Changed active page"}
+{"level":30,"time":"2023-03-10T18:13:40.868Z","pid":15644,"hostname":"Lucy","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-03-10T18:13:40.884Z","pid":15644,"hostname":"Lucy","msg":"Removed page=31593349-5b85-420f-8ae9-b147306b65ef from context=3d31e2a6-defb-4c6f-aed1-2eede4d31158 page stack"}
+{"level":30,"time":"2023-03-10T18:13:40.907Z","pid":15644,"hostname":"Lucy","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-03-10T18:13:40.918Z","pid":15644,"hostname":"Lucy","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:40.918Z","pid":15644,"hostname":"Lucy","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-03-10T18:13:41.110Z","pid":15644,"hostname":"Lucy","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-03-10T18:13:41.236Z","pid":15644,"hostname":"Lucy","msg":"End of node method closeAllBrowsers"}

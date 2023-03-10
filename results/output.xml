@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20230310 15:13:14.949" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Teste WEB" source="C:\Users\Augusto\Downloads\Robot_Teste_WEB">
+<suite id="s1-s1" name="Frontend" source="C:\Users\Augusto\Downloads\Robot_Teste_WEB\frontend">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\Augusto\Downloads\Robot_Teste_WEB\frontend\tests">
+<suite id="s1-s1-s1-s1" name="TC#01-Carrinho abandonado" source="C:\Users\Augusto\Downloads\Robot_Teste_WEB\frontend\tests\TC#01-Carrinho abandonado.robot">
+<test id="s1-s1-s1-s1-t1" name="Comprar um produto" line="15">
+<kw name="Iniciar Sessão" library="Base" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>false</arg>
+<arg>slowMo=0:00:01</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20230310 15:13:15.634" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "C:\\Users\\Augusto\\Downloads\\Robot_Teste_WEB\\results\\browser\\traces\\35a69010-2853-4ecb-8ee1-c86e0c2c19ed"}</msg>
+<msg timestamp="20230310 15:13:16.008" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"C:\\Users\\Augusto\\Downloads\\Robot_Teste_WEB\\results\\browser\\traces\\35a69010-2853-4ecb-8ee1-c86e0c2c19ed"}</msg>
+<status status="PASS" starttime="20230310 15:13:15.634" endtime="20230310 15:13:16.009"/>
+</kw>
+<status status="PASS" starttime="20230310 15:13:15.633" endtime="20230310 15:13:16.009"/>
+</kw>
+<kw name="Dado que estou no site da loja" library="Base">
+<kw name="New Page" library="Browser">
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20230310 15:13:18.147" level="INFO">Successfully initialized new page object and opened url: https://123qweqwe-1079359.commercesuite.com.br/</msg>
+<msg timestamp="20230310 15:13:18.147" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20230310 15:13:16.011" endtime="20230310 15:13:18.148"/>
+</kw>
+<status status="PASS" starttime="20230310 15:13:16.010" endtime="20230310 15:13:18.149"/>
+</kw>
+<kw name="E realizo o login" library="HomeSite">
+<arg>augusto.santos@allin.com.br</arg>
+<arg>testedaSilva#03</arg>
+<kw name="Click" library="Browser">
+<arg>//a[contains(.,'Minha Conta')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230310 15:13:18.150" endtime="20230310 15:13:19.232"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>//button[@class='app__button--primary app__login__button app__login__button--login'][contains(.,'Entrar')]</arg>
+<arg>visible</arg>
+<arg>${Timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230310 15:13:19.310" level="INFO">Waited for Element with selector //button[@class='app__button--primary app__login__button app__login__button--login'][contains(.,'Entrar')] at state visible</msg>
+<status status="PASS" starttime="20230310 15:13:19.233" endtime="20230310 15:13:19.311"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//button[@class='app__button--primary app__login__button app__login__button--login'][contains(.,'Entrar')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230310 15:13:19.311" endtime="20230310 15:13:20.380"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>//strong[@class='tray-title tray-login__title'][contains(.,'Identifique-se')]</arg>
+<arg>visible</arg>
+<arg>${Timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230310 15:13:20.386" level="INFO">Waited for Element with selector //strong[@class='tray-title tray-login__title'][contains(.,'Identifique-se')] at state visible</msg>
+<status status="PASS" starttime="20230310 15:13:20.380" endtime="20230310 15:13:20.387"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>//input[contains(@autocapitalize,'off')]</arg>
+<arg>${login}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230310 15:13:20.388" level="INFO">Fills the text 'augusto.santos@allin.com.br' in the given field.</msg>
+<status status="PASS" starttime="20230310 15:13:20.387" endtime="20230310 15:13:21.418"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//button[@type='submit'][contains(.,'Continuar')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230310 15:13:21.419" endtime="20230310 15:13:22.457"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>//input[contains(@type,'password')]</arg>
+<arg>visible</arg>
+<arg>${Timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230310 15:13:22.464" level="INFO">Waited for Element with selector //input[contains(@type,'password')] at state visible</msg>
+<status status="PASS" starttime="20230310 15:13:22.458" endtime="20230310 15:13:22.465"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>//input[contains(@type,'password')]</arg>
+<arg>${senha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20230310 15:13:22.466" level="INFO">Fills the text 'testedaSilva#03' in the given field.</msg>
+<status status="PASS" starttime="20230310 15:13:22.465" endtime="20230310 15:13:23.496"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//button[@type='submit'][contains(.,'Continuar')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230310 15:13:23.496" endtime="20230310 15:13:24.519"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>//a[contains(@class,'app__button app__button--primary app__button--no-margin')]</arg>
+<arg>visible</arg>
+<arg>${Timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230310 15:13:26.437" level="INFO">Waited for Element with selector //a[contains(@class,'app__button app__button--primary app__button--no-margin')] at state visible</msg>
+<status status="PASS" starttime="20230310 15:13:24.519" endtime="20230310 15:13:26.438"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//h1[@class='app__header__title'][contains(.,'´!¹²³$£¢¬¬..§ø123qweQWE;?')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230310 15:13:26.438" endtime="20230310 15:13:28.455"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>//a[contains(.,'Sair')]</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230310 15:13:28.467" level="INFO">Waited for Element with selector //a[contains(.,'Sair')] at state visible</msg>
+<status status="PASS" starttime="20230310 15:13:28.455" endtime="20230310 15:13:28.467"/>
+</kw>
+<status status="PASS" starttime="20230310 15:13:18.149" endtime="20230310 15:13:28.468"/>
+</kw>
+<kw name="E visualizo um produto" library="HomeSite">
+<kw name="Click" library="Browser">
+<arg>(//a[@href='https://123qweqwe-1079359.commercesuite.com.br/racao'][contains(.,'Ração')])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230310 15:13:28.469" endtime="20230310 15:13:29.494"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>//a[contains(@itemprop,'url')]</arg>
+<arg>visible</arg>
+<arg>${Timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230310 15:13:29.586" level="INFO">Waited for Element with selector //a[contains(@itemprop,'url')] at state visible</msg>
+<status status="PASS" starttime="20230310 15:13:29.495" endtime="20230310 15:13:29.587"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//a[contains(@itemprop,'url')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230310 15:13:29.587" endtime="20230310 15:13:32.451"/>
+</kw>
+<status status="PASS" starttime="20230310 15:13:28.469" endtime="20230310 15:13:32.451"/>
+</kw>
+<kw name="Quando clico em &quot;comprar&quot;" library="HomeSite">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230310 15:13:34.464" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230310 15:13:32.453" endtime="20230310 15:13:34.465"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>//span[@class='botao-commerce-img'][contains(.,'Comprar')]</arg>
+<arg>visible</arg>
+<arg>${Timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230310 15:13:34.482" level="INFO">Waited for Element with selector //span[@class='botao-commerce-img'][contains(.,'Comprar')] at state visible</msg>
+<status status="PASS" starttime="20230310 15:13:34.465" endtime="20230310 15:13:34.483"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//span[@class='botao-commerce-img'][contains(.,'Comprar')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230310 15:13:34.484" endtime="20230310 15:13:35.536"/>
+</kw>
+<status status="PASS" starttime="20230310 15:13:32.452" endtime="20230310 15:13:35.536"/>
+</kw>
+<kw name="E Avanço para finalizar o pedido" library="HomeSite">
+<kw name="Wait For Elements State" library="Browser">
+<arg>//span[@class='botao-commerce-img'][contains(.,'Avançar')]</arg>
+<arg>visible</arg>
+<arg>${Timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230310 15:13:36.085" level="INFO">Waited for Element with selector //span[@class='botao-commerce-img'][contains(.,'Avançar')] at state visible</msg>
+<status status="PASS" starttime="20230310 15:13:35.538" endtime="20230310 15:13:36.086"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//span[@class='botao-commerce-img'][contains(.,'Avançar')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20230310 15:13:36.087" endtime="20230310 15:13:37.112"/>
+</kw>
+<status status="PASS" starttime="20230310 15:13:35.537" endtime="20230310 15:13:37.112"/>
+</kw>
+<kw name="Então o comportamento de carrinho é captado com sucesso" library="HomeSite">
+<kw name="Wait For Response" library="Browser">
+<arg>${RESPONSE_BETA}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits for response matching matcher and returns python dict with contents.</doc>
+<msg timestamp="20230310 15:13:40.732" level="INFO">{'status': 200, 'body': {'status': 'Success'}, 'headers': {'date': 'Fri, 10 Mar 2023 18:13:39 GMT', 'content-encoding': 'br', 'cf-cache-status': 'DYNAMIC', 'nel': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'server': 'cloudflare', 'access-control-allow-methods': 'POST,GET,PUT,DELETE,OPTIONS,PATCH', 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'report-to': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=KzUgcliDNbeilwNWpYUX2Lu%2BgY8E8gEeTDWfwQNHQDi%2FwVnnZQiYPNpHYg%2Fk3aSIT30qHbnEh2ZQHm%2FrOJDKxOoj3%2Box5Nua%2FI1b1prskz3y1VylsXfiFEu6QFEqxgbrqYRPAZ2L1Ha54tAm"}],"group":"cf-nel","max_age":604800}', 'cf-ray': '7a5d88681d44a69a-GRU', 'access-control-allow-headers': 'Accept, Origin, Content-type, Authorization'}, 'statusText': '', 'url': 'https://beta-wonka.socialminer.com/ursa/enterprise/behaviors', 'ok': True, 'request': {'headers': {'sec-ch-ua': '"Chromium";v="105", "Not)A;Brand";v="8"', 'referer': 'https://123qweqwe-1079359.commercesuite.com.br/', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '"Windows"', 'content-type': 'application/json'}, 'method': 'POST', 'postData': {'Behaviors': [{'customerId': 'd7c6ad9f-4b22-4094-9641-5e320117aff2', 'createDate': '2023-03-10 18:13:40', 'personId': 'fdf3e875-0401-449e-aab1-e585e77c9404', 'clientId': '787fb445-4c32-4acc-aa95-ea827bb82e6c', 'url': 'https%3A%2F%2F123qweqwe-1079359.commercesuite.com.br%2Fcheckout%2Fcart%3Fsession_id%3Dlkc7hie24calij2pn116q3ict1%26store_id%3D1079359%26token%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImF1Z3VzdG8uc2FudG9zQGFsbGluLmNvbS5iciIsIm9yaWdpbiI6bnVsbCwiZXhwIjoxNjc4NDcyMTM0fQ.BYjRce8J-tHfTj-K1rpT3rD7-pOOoFa00_pdDMIJUS0%23carrinho', 'referer': 'https%3A%2F%2F123qweqwe-1079359.commercesuite.com.br%2Fracao%2Fracao-seca-granplus-gourmet-salmao-frango-para-caes-adultos-racas-medias-e-grandes', 'metadata': {'cart': {}}}], 'sessionHash': '7054d0feed2f34a1187b10b29c872b1d185095ec'}}}</msg>
+<status status="PASS" starttime="20230310 15:13:37.113" endtime="20230310 15:13:40.732"/>
+</kw>
+<status status="PASS" starttime="20230310 15:13:37.113" endtime="20230310 15:13:40.733"/>
+</kw>
+<kw name="Finalizar Teste" library="Base" type="TEARDOWN">
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20230310 15:13:40.843" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230310 15:13:40.734" endtime="20230310 15:13:40.844"/>
+</kw>
+<status status="PASS" starttime="20230310 15:13:40.734" endtime="20230310 15:13:40.844"/>
+</kw>
+<tag>CA02</tag>
+<status status="PASS" starttime="20230310 15:13:15.630" endtime="20230310 15:13:40.845"/>
+</test>
+<doc>Validação do Login.</doc>
+<status status="PASS" starttime="20230310 15:13:14.975" endtime="20230310 15:13:40.914"/>
+</suite>
+<status status="PASS" starttime="20230310 15:13:14.973" endtime="20230310 15:13:40.920"/>
+</suite>
+<status status="PASS" starttime="20230310 15:13:14.971" endtime="20230310 15:13:40.922"/>
+</suite>
+<status status="PASS" starttime="20230310 15:13:14.952" endtime="20230310 15:13:40.924"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CA02</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Teste WEB">Robot Teste WEB</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Frontend">Robot Teste WEB.Frontend</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tests">Robot Teste WEB.Frontend.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="TC#01-Carrinho abandonado">Robot Teste WEB.Frontend.Tests.TC#01-Carrinho abandonado</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
